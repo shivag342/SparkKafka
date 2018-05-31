@@ -18,8 +18,8 @@ public class CosmosDBConnect implements Serializable {
 	public DocumentClient client;
 
 	public void getStartedDemo(int i, String jsonPrettyPrintString) throws DocumentClientException, IOException {
-		this.client = new DocumentClient("https://sparkkafka342.documents.azure.com:443/",
-				"SkIRhYPmxzdhoRrryo5PMZyQ2WqlTsWYQvbNCCTHyidFb0shnNeQbYr65SUv9qxB9CH3oGlXBdvJFdrTtjcp4w==",
+		this.client = new DocumentClient("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 				new ConnectionPolicy(), ConsistencyLevel.Session);
 		String docname = "KSdoc" + i;
 		// Gson gson = new GsonBuilder().serializeNulls().create();
