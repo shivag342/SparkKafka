@@ -45,8 +45,8 @@ public class Program implements Serializable{
 	 * } }
 	 */
 	public void getStartedDemo(int i, String jsonPrettyPrintString) throws DocumentClientException, IOException {
-		this.client = new DocumentClient("https://sparkkafka342.documents.azure.com:443/",
-				"SkIRhYPmxzdhoRrryo5PMZyQ2WqlTsWYQvbNCCTHyidFb0shnNeQbYr65SUv9qxB9CH3oGlXBdvJFdrTtjcp4w==",
+		this.client = new DocumentClient("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 				new ConnectionPolicy(), ConsistencyLevel.Session);
 		String docname="KSdoc"+i;
 		//Gson gson = new GsonBuilder().serializeNulls().create();
@@ -55,8 +55,8 @@ public class Program implements Serializable{
 	}
 
 /*	public void getStartedDemo(int i) throws DocumentClientException, IOException {
-		this.client = new DocumentClient("https://sparkkafka342.documents.azure.com:443/",
-				"SkIRhYPmxzdhoRrryo5PMZyQ2WqlTsWYQvbNCCTHyidFb0shnNeQbYr65SUv9qxB9CH3oGlXBdvJFdrTtjcp4w==",
+		this.client = new DocumentClient("rul",
+				"masterkey",
 				new ConnectionPolicy(), ConsistencyLevel.Session);
 		Family andersenFamily = getAndersenFamilyDocument(i);
 		this.createFamilyDocumentIfNotExists("kfDB", "kfCol", andersenFamily);
